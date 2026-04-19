@@ -142,7 +142,7 @@ REST_FRAMEWORK = {
 
 # Allow React dev server to talk to Django
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5174',  # Vite
+    'http://localhost:5173',  # Vite
     'http://localhost:3000',  # CRA
 ]
 CORS_ALLOW_CREDENTIALS = True

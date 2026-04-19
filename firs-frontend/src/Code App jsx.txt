@@ -1,4 +1,6 @@
-
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
 import './App.css'
 
 import { useState, useEffect, useRef, useCallback } from "react";
@@ -359,11 +361,7 @@ function LoginPage({ onLogin, onForgot }) {
     <div className="auth-wrap">
       <div className="auth-card">
         <div className="auth-header">
-
-        <div className="auth-brand-icon">
-          <img src="/BFP logo.svg" alt="BFP Logo" width="40" height="40" />
-        </div>
-
+          <div className="auth-brand-icon"><FlameIcon /></div>
           <h1>FIRS — Fire Incident Recording System</h1>
           <p>Bureau of Fire Protection · Cagayan de Oro City</p>
         </div>
@@ -419,11 +417,7 @@ function ForgotPage({ onBack }) {
     <div className="auth-wrap">
       <div className="auth-card">
         <div className="auth-header">
-
-          <div className="auth-brand-icon">
-            <img src="/BFP logo.png" alt="BFP Logo" width="40" height="40" />
-          </div>
-
+          <div className="auth-brand-icon"><FlameIcon /></div>
           <h1>FIRS — Fire Incident Recording System</h1>
           <p>Bureau of Fire Protection · Cagayan de Oro City</p>
         </div>
@@ -1216,12 +1210,8 @@ export default function App() {
       <div className="app-shell">
         <div className="topbar">
           <div className="topbar-brand">
-  
-  <div className="brand-icon">
-  <img src="/BFP logo.svg" alt="BFP Logo" width="32" height="32" />
-</div>
-
-          <div>
+            <div className="brand-icon"><FlameIconSm /></div>
+            <div>
               <div className="brand-title">FIRS — Fire Incident Recording System</div>
               <div className="brand-sub">BFP · Cagayan de Oro City</div>
             </div>
