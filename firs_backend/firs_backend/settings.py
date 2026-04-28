@@ -172,5 +172,5 @@ EMAIL_HOST_PASSWORD = 'aotnebxrdhlinrvo'    # ← change this (App Password, not
 DEFAULT_FROM_EMAIL  = EMAIL_HOST_USER
 
 PASSWORD_RESET_TIMEOUT = 120   # link expires in 1 hour (seconds)
-FRONTEND_URL = 'http://localhost:5173'  # ← change in production
+FRONTEND_URL = os.environ.get('FRONTEND_URL', 'http://localhost:5173')  # ← change in production
 
